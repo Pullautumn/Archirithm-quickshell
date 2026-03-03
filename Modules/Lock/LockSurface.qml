@@ -31,7 +31,7 @@ Item {
         id: wallpaper
         anchors.fill: parent
         z: 0
-        source: "file:///home/archirithm/.cache/wallpaper_rofi/current"
+        source: "file://" + Quickshell.env("HOME") + "/.cache/wallpaper_rofi/current"
         fillMode: Image.PreserveAspectCrop
         visible: false 
     }
@@ -108,7 +108,7 @@ Item {
 
             Image {
                 id: lockIconSource
-                source: "file:///home/archirithm/.config/quickshell/assets/icons/lock.svg"
+                source: "file://" + Quickshell.env("HOME") + "/.config/quickshell/assets/icons/lock.svg"
                 anchors.fill: parent
                 fillMode: Image.PreserveAspectFit
                 visible: false 
